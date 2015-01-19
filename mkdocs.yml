@@ -1,0 +1,15 @@
+site_name: SEAPY
+site_description: A collaborative effort to organize and distribute Python tools for the Oceanographic Community
+site_author: Filipe Fernandes
+site_url: https://ocefpaf.github.io/seapy
+repo_url: https://github.com/ocefpaf/seapy
+site_favicon: favicon.png
+docs_dir: src
+site_dir: _site
+pages:
+  - ['index.md', 'Home']
+  - ['license.html', 'License']
+markdown_extensions:
+    [smartypants, mathjax, markdown_checklist.extension]
+theme_dir: custom
+google_analytics: ['UA-9133259-16']
