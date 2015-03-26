@@ -24,6 +24,8 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 
 ## Time Series Tools
 
+- [UTide](https://github.com/wesleybowman/UTide): UTide - A project (in its early development phase) to create a Python implementation of the Matlab-based UTide tidal analysis tools.
+- [ttide](https://github.com/moflaher/ttide_py): A direct conversion of T_Tide to Python.
 - [pytides](https://github.com/sam-cox/pytides): Pytides is small Python package for the analysis and prediction of tides.
 - [tappy](http://sourceforge.net/apps/mediawiki/tappy/index.php): Tidal analysis package.
 - [dateutil](http://labix.org/python-dateutil): Provides powerful extensions to the standard datetime module.
@@ -37,6 +39,8 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 
 - [octant](https://github.com/hetland/octant): Ocean C-grid model seTup and Analysis Toolkit. The toolkit contains general modeling tools for dealing with arrays, diagnosing standard properties, curvilinear grid generation, and interpolation. Specific tools are also included for ROMS and GETM.
 - [pyroms](https://github.com/kshedstrom/pyroms): Collection of tools to help with input and output files from the Regional Ocean Modeling System (ROMS).
+- [PySeidon](https://github.com/GrumpyNounours/PySeidon): Suite of tools for the tidal energy community and FVCOM users
+- [PyFVCOM](https://github.com/pwcazenave/PyFVCOM): PyFVCOM is a collection of various tools and utilities which can be used to extract, analyse and plot input and output files from FVCOM.
 
 
 ## Mapping Tools
@@ -63,7 +67,7 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 - [PyTables](http://www.pytables.org/moin): Package for managing hierarchical datasets and designed to efficiently and easily cope with extremely large amounts of data.
 - [h5py](http://code.google.com/p/h5py): Interface to the HDF5 library.
 - [python-hdf4](https://pypi.python.org/pypi/python-hdf4): Python-HDF4: Python interface to the NCSA HDF4 library.
-- [PyNIO](http://www.pyngl.ucar.edu): File input/output
+- [PyNIO/PyNGL](http://www.pyngl.ucar.edu): File input/output
 - [Pydap](http://pydap.org): Library implementing the Data Access Protocol.
 - [pygrib](https://pypi.python.org/pypi/pygrib): python GRIB (editions 1 and 2) reader.
 
