@@ -42,6 +42,7 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 - [PySeidon](https://github.com/GrumpyNounours/PySeidon): Suite of tools for the tidal energy community and FVCOM users
 - [PyFVCOM](https://github.com/pwcazenave/PyFVCOM): PyFVCOM is a collection of various tools and utilities which can be used to extract, analyse and plot input and output files from FVCOM.
 - [TracPy](https://github.com/kthyng/Tracpy): Fortran core of Tracmass + Python wrapping around the outside.
+- [pygridgen](https://github.com/hetland/pygridgen): A Python interface to Pavel Sakov's C-based Gridgen Orthogonal Grid Generation Package.
 
 ## Mapping Tools
 
