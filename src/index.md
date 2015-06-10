@@ -129,7 +129,7 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 - [biopython](http://biopython.org/wiki/Main_Page): Tools for biological computation written in Python.
 - [pytroll](http://www.pytroll.org/): Python modules for the reading, interpretation, and writing of weather satellite data.
 - [Topical Software](http://www.scipy.org/Topical_Software): SciPy Topical Software.
-
+- [pyferret](http://ferret.pmel.noaa.gov/Ferret/downloads/pyferret/): Ferret is an interactive computer visualization and analysis environment designed to meet the needs of oceanographers and meteorologists.
 
 ## Fun
 
