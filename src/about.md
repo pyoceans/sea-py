@@ -1,35 +1,35 @@
-# -*- coding: utf-8 -*-
-#
-# title_pics.py
-#
-# purpose:  Create map and time-series for title
-# author:   Filipe P. A. Fernandes
-# e-mail:   ocefpaf@gmail
-# web:      http://ocefpaf.github.io/
-# created:  20-Jan-2015
-# modified: Tue 20 Jan 2015 11:18:15 AM BRT
-#
-# obs:
-#
+# About
+
+<table summary="Title">
+    <tr>
+        <td><img src="../img/map.png" alt="South Atlantic Bathymetry"/></td>
+        <td><h3><br/>A collaborative effort to organize and distribute<br/>
+        Python tools for the Oceanographic Community</h3></td>
+        <td><img src="../img/timeSeries.png" alt="time series plot"/></td>
+    </tr>
+</table>
 
 
+SEAPY is intended to be an equivalent of
+[SEA-MAT](http://woodshole.er.usgs.gov/operations/sea-mat/).  The images above
+are created using [matplotlib](http://matplotlib.org/) and
+[cartopy](http://scitools.org.uk/cartopy/docs/latest/index.html).
+[Here](./code/title_pics.py) is the code, enjoy:
+
+```python
 import matplotlib
 import numpy as np
 import cartopy.crs as ccrs
 import matplotlib.pyplot as plt
-from cartopy.mpl.gridliner import LONGITUDE_FORMATTER, LATITUDE_FORMATTER
 
 matplotlib.style.use('ggplot')
+
 
 def make_map(projection=ccrs.PlateCarree(),
              extent=[-43.5, -32.5, -24.5, -14.5]):
     subplot_kw = dict(projection=projection)
     fig, ax = plt.subplots(figsize=(3.25, 3.25), subplot_kw=subplot_kw)
     ax.set_extent(extent)
-    #gl = ax.gridlines(draw_labels=True)
-    #gl.xlabels_top = gl.ylabels_right = False
-    #gl.xformatter = LONGITUDE_FORMATTER
-    #gl.yformatter = LATITUDE_FORMATTER
     return fig, ax
 
 
@@ -77,3 +77,4 @@ if __name__ == '__main__':
 
     fig.savefig('timeSeries.png', format='png', dpi=72, orientation='portrait',
                 transparent=True)
+```
