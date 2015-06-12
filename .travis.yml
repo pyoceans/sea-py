@@ -16,7 +16,11 @@ install:
     - pip install https://github.com/mitya57/python-markdown-math/archive/master.zip
 
 script:
-    - mkdocs build --clean
+    - mkdocs build --clean --verbose
 
 after_success:
-    - mkdocs gh-deploy --verbose
+    # It is kind of silly to clone something that exists locally,
+    # but `mkdocs gh-deploy` cannot read GH_TOKEN.
+    - git clone "https://${GH_TOKEN}@github.com/${GIT_NAME}/seapy.git" gh-pages
+    - cd gh-pages
+    - mkdocs gh-deploy
