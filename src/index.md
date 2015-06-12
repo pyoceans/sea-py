@@ -43,6 +43,7 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 - [PyFVCOM](https://github.com/pwcazenave/PyFVCOM): PyFVCOM is a collection of various tools and utilities which can be used to extract, analyse and plot input and output files from FVCOM.
 - [TracPy](https://github.com/kthyng/Tracpy): Fortran core of Tracmass + Python wrapping around the outside.  TracPy is a toolbox for Lagrangian tracking on top of staggered C grid model output, and is currently set up to use directly with ROMS.
 - [pygridgen](https://github.com/hetland/pygridgen): A Python interface to Pavel Sakov's C-based Gridgen Orthogonal Grid Generation Package.
+- [okean](https://github.com/martalmeida/okean): Ocean modelling and analysis tools.
 
 ## Mapping Tools
 
