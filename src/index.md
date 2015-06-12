@@ -51,7 +51,7 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 - [cartopy](http://scitools.org.uk/cartopy/): A library providing cartographic tools for python.
 - [folium](http://folium.readthedocs.org/en/latest): Python Data. Leaflet.js Maps.
 - [PySAL](http://code.google.com/p/pysal): Python Spatial Analysis Library.
-
+- [sci-wms](https://github.com/sci-wms/sci-wms): A Python WMS service for geospatial gridded data.
 
 ## Hydrographic Tools
 
