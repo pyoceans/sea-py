@@ -11,9 +11,26 @@
 
 
 SEAPY is intended to be an equivalent of
-[SEA-MAT](http://woodshole.er.usgs.gov/operations/sea-mat/).  The images above
-are created using [matplotlib](http://matplotlib.org/) and
-[cartopy](http://scitools.org.uk/cartopy/docs/latest/index.html).
+[SEA-MAT](http://woodshole.er.usgs.gov/operations/sea-mat/).
+
+# Contributing
+
+If you would liked to contribute to maintain this list up-to-date and/or adding
+some new items you can fork the
+[repository](https://github.com/ocefpaf/seapy#fork-destination-box) and edit
+the pages files in the
+[`src`](https://github.com/ocefpaf/seapy/tree/master/src) directory.  They are
+just simple Markdown files.  If you are not GitHub savy, just open issues with
+corrections and/or requests of what you would like to see here.
+
+# Logo
+
+The images at the top were inspired by
+[SEA-MAT's](http://woodshole.er.usgs.gov/operations/sea-mat/) header images,
+but instead of showing Gulf of Maine and a random time-series they show the
+Vitória-Trindade Seamount chain and a fake Semi-diurnal tide.  The images were
+created using [matplotlib](http://matplotlib.org/)
+and [cartopy](http://scitools.org.uk/cartopy/docs/latest/index.html).
 [Here](./code/title_pics.py) is the code, enjoy:
 
 ```python

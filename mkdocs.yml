@@ -2,7 +2,7 @@ site_name: SEAPY
 pages:
   - Home: index.md
   - Web resources: webresources.md
-  - About: 'about.md'
+  - About: about.md
 
 theme_dir: mkdocs
 
