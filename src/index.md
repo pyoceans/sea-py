@@ -60,6 +60,7 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 - [python-gsw](https://pypi.python.org/pypi/gsw): A oceanographic toolbox of the International Thermodynamic Equation Of Seawater - 2010, (TEOS-10).
 - [pygsw](https://pypi.python.org/pypi/pygsw): C-wrapped alternative to python-gsw.
 - [co2sys](https://pypi.python.org/pypi/co2sys): CO2SYS calculates the two carbonate system parameters.
+- [narwhal](http://ironicmtn.com/narwhal.html): Experimental tools to organize, analyze, and plot CTD data, including GSW wrappers.
 
 
 ## Data Interface Tools
