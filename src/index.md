@@ -60,6 +60,7 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 - [python-gsw](https://pypi.python.org/pypi/gsw): A oceanographic toolbox of the International Thermodynamic Equation Of Seawater - 2010, (TEOS-10).
 - [pygsw](https://pypi.python.org/pypi/pygsw): C-wrapped alternative to python-gsw.
 - [co2sys](https://pypi.python.org/pypi/co2sys): CO2SYS calculates the two carbonate system parameters.
+- [narwhal](http://ironicmtn.com/narwhal.html): Experimental tools to organize, analyze, and plot CTD data, including GSW wrappers.
 
 
 ## Data Interface Tools
@@ -132,6 +133,7 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 - [pytroll](http://www.pytroll.org/): Python modules for the reading, interpretation, and writing of weather satellite data.
 - [Topical Software](http://www.scipy.org/Topical_Software): SciPy Topical Software.
 - [pyferret](http://ferret.pmel.noaa.gov/Ferret/downloads/pyferret/): Ferret is an interactive computer visualization and analysis environment designed to meet the needs of oceanographers and meteorologists.
+- [openptv](http://www.openptv.net): OpenPTV is an open source particle tracking velocimetry consortium providing software and assistance with the 3D-PTV experiments, including the field deployments for oceanographers, limnologists and meteorologits.
 
 ## Fun
 
