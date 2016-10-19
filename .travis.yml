@@ -5,7 +5,9 @@ sudo: false
 python: '2.7'
 
 before_install:
-  - openssl aes-256-cbc -K $encrypted_ba1f58cdcb71_key -iv $encrypted_ba1f58cdcb71_iv -in deploy_key.enc -out deploy_key -d
+  - if [[ "$TRAVIS_PULL_REQUEST" == "false" ]]; then
+    openssl aes-256-cbc -K $encrypted_ba1f58cdcb71_key -iv $encrypted_ba1f58cdcb71_iv -in deploy_key.enc -out deploy_key -d ;
+    fi
 
 install:
   - pip install mkdocs markdown-checklist
