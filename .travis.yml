@@ -2,12 +2,14 @@ language: python
 
 sudo: false
 
-python: '2.7'
+python: '3.5'
+
+env:
+  global:
+    - secure: "GBUWN7mc4pdUrR15grztD6NchiYhFT70ap6hKWIf0d3XwfWSQo0I85qnIqSWrzuThMp7qjJMCvemrPpXBZngUL3LvYi1t9LoF5shokO5tD3qLnaT0mFtW5r2JuOFR+7dMmbTklVqmB3zX+/JPn+L3qeyDn7mwbW++lcoe2jA6qY="
 
 before_install:
-  - if [[ "$TRAVIS_PULL_REQUEST" == "false" ]]; then
-    openssl aes-256-cbc -K $encrypted_aa8a41984bfc_key -iv $encrypted_aa8a41984bfc_iv -in deploy_key.enc -out deploy_key -d ;
-    fi
+  - pip install doctr
 
 install:
   - pip install mkdocs markdown-checklist
@@ -15,4 +17,4 @@ install:
 
 script:
   - mkdocs build --clean --verbose
-  - bash scripts/deploy.sh
+  - doctr deploy --built-docs=_site
