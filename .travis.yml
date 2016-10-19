@@ -17,4 +17,4 @@ install:
 
 script:
   - mkdocs build --clean --verbose
-  - doctr deploy --built-docs=_site
+  - doctr deploy --built-docs=_site --gh-pages-docs .
