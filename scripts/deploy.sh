@@ -22,8 +22,6 @@ REMOTE_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=$(git rev-parse --verify HEAD)
 
 # Start a git repo based on the `_site` directory and push to gh-pages.
-mkdocs build --clean --verbose
-
 pushd _site
 git init
 git config user.name "Travis-CI"
