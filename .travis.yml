@@ -1,26 +1,15 @@
 language: python
+
+sudo: false
+
 python: '2.7'
 
-env:
-    global:
-        - secure: "QEBHmZVWTO4vERo1/2iCGuMC1TZPF0Yfic0gvZ+ogEPfU0NhlZ2mdXv3w0BgWTNkNKaCorG/7bZAtbERKSveA5Ftrk+a6zPUBprseljl6cpkmHA9+FNWRoAYl/vyythS3igjmz0M4OuFFNnk0y1UZkuXCYyHhpvjAR+h7KymHpA="
-        - secure: "hDsT55eRQ5dRpyHwoFKCZJ1Q1IB92T8h83uRJpLMuBTJU4gaBBlsI3Gw9sr8zs86zotUclNGYD1ljiDmzk3vp+wYznJ+5P1yr3nmlYrjZTyQOF1ruFo8cVzqyBaP0ezjkX8PVe1popDjQvaP/LWoh3uVarrbMvCG0vtYw3B/K00="
-        - secure: "UJ+ZTojcC+xz0kZm2sQNtIR+Mxj0INzcoNAhJBli0IY1AoN1BohAlaKRWIjqw1oJxlzQRITEBUqRNph6fdGbXgMpqPE3wv/CIPeRJ6KOwWCOOrCgDuqJcqA1ZrSKuR9IEHV5F1U3/8B5iys7bdNx9WGL7PKhw3utW+qsFO6QQbc="
-
-before_script:
-    - git config --global user.email $GIT_EMAIL
-    - git config --global user.name $GIT_NAME
+before_install:
+  - openssl aes-256-cbc -K $encrypted_ba1f58cdcb71_key -iv $encrypted_ba1f58cdcb71_iv -in deploy_key.enc -out deploy_key -d
 
 install:
-    - pip install mkdocs markdown-checklist
-    - pip install https://github.com/mitya57/python-markdown-math/archive/master.zip
+  - pip install mkdocs markdown-checklist
+  - pip install https://github.com/mitya57/python-markdown-math/archive/master.zip
 
 script:
-    - mkdocs build --clean --verbose
-
-after_success:
-    # It is kind of silly to clone something that exists locally,
-    # but `mkdocs gh-deploy` cannot read GH_TOKEN.
-    - git clone "https://${GH_TOKEN}@github.com/${GIT_NAME}/seapy.git" gh-pages
-    - cd gh-pages
-    - mkdocs gh-deploy
+  - bash scripts/deploy.sh
