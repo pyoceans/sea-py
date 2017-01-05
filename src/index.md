@@ -1,9 +1,9 @@
-# SEAPY: Python Tools for Oceanographic Analysis
+# SEA-PY: Python Tools for Oceanographic Analysis
 
 <table summary="Title">
     <tr>
         <td><img src="img/map.png" alt="South Atlantic Bathymetry"/></td>
-        <td><h3><br/>A collaborative effort to organize and distribute<br/>
+        <td><h3>A collaborative effort to organize and distribute<br/>
         Python tools for the Oceanographic Community</h3></td>
         <td><img src="img/timeSeries.png" alt="time series plot"/></td>
     </tr>
