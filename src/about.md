@@ -17,10 +17,10 @@ SEAPY is intended to be an equivalent of
 
 If you would liked to contribute to maintain this list up-to-date and/or adding
 some new items you can fork the
-[repository](https://github.com/ocefpaf/seapy#fork-destination-box) and edit
+[repository](https://github.com/ocefpaf/sea-py#fork-destination-box) and edit
 the pages files in the
-[`src`](https://github.com/ocefpaf/seapy/tree/master/src) directory.  They are
-just simple Markdown files.  If you are not GitHub savy, just open issues with
+[`src`](https://github.com/ocefpaf/sea-py/tree/master/src) directory.  They are
+just simple Markdown files.  If you are not GitHub savvy, just open issues with
 corrections and/or requests of what you would like to see here.
 
 # Logo
