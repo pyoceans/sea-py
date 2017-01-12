@@ -10,8 +10,8 @@
 </table>
 
 
-SEAPY is intended to be an equivalent of
-[SEA-MAT](http://woodshole.er.usgs.gov/operations/sea-mat/).
+sea-py is intended to be an equivalent of
+[sea-mat](https://sea-mat.github.io/sea-mat/).
 
 # Contributing
 
@@ -26,7 +26,7 @@ corrections and/or requests of what you would like to see here.
 # Logo
 
 The images at the top were inspired by
-[SEA-MAT's](http://woodshole.er.usgs.gov/operations/sea-mat/) header images,
+[sea-mat's](https://sea-mat.github.io/sea-mat/) header images,
 but instead of showing Gulf of Maine and a random time-series they show the
 Vitória-Trindade Seamount chain and a fake Semi-diurnal tide.  The images were
 created using [matplotlib](http://matplotlib.org/)
