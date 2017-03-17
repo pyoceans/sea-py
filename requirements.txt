@@ -1,4 +1,0 @@
-doctr
-mkdocs
-markdown-checklist
-python-markdown-math
