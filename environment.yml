@@ -1,0 +1,10 @@
+name: TEST
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6
+  - doctr
+  - mkdocs
+  - markdown-checklist
+  - python-markdown-math
