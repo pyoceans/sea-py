@@ -21,6 +21,9 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 - [SciPy](http://www.scipy.org): Library of algorithms and mathematical tools for the Python programming language.
 - [matplotlib](http://matplotlib.sourceforge.net): 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments.
 
+## Data Acquisition
+
+- [Podaacpy](https://github.com/nasa/podaacpy): A python utility library for interacting with NASA JPL's [PO.DAAC](https://podaac.jpl.nasa.gov/) and NASA's [OceanColor Web](https://oceancolor.gsfc.nasa.gov/)
 
 ## Data Acquisition
 
