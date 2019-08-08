@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A collaborative effort to organize and distribute Python tools for the Oceanographic Community">
+        <meta name="author" content="Filipe Fernandes">
+        <link rel="canonical" href="https://pyoceans.github.io/sea-py/">
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <title>SEA-PY</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-9133259-16', 'pyoceans.github.io');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href=".">SEA-PY</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href=".">Home</a>
+                            </li>
+                            <li >
+                                <a href="webresources/">Web resources</a>
+                            </li>
+                            <li >
+                                <a href="about/">About</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="disabled">
+                                <a rel="next" >
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="webresources/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/pyoceans/sea-py/edit/master/docs/index.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#sea-py-python-tools-for-oceanographic-analysis">SEA-PY: Python Tools for Oceanographic Analysis</a></li>
+            <li><a href="#the-bare-minimum">The bare minimum</a></li>
+            <li><a href="#data-acquisition">Data Acquisition</a></li>
+            <li><a href="#data-acquisition_1">Data Acquisition</a></li>
+            <li><a href="#time-series-tools">Time Series Tools</a></li>
+            <li><a href="#numerical-modeling-tools">Numerical Modeling Tools</a></li>
+            <li><a href="#mapping-tools">Mapping Tools</a></li>
+            <li><a href="#hydrographic-tools">Hydrographic Tools</a></li>
+            <li><a href="#data-interface-tools">Data Interface Tools</a></li>
+            <li><a href="#plotting-beyond-matplotlib">Plotting (beyond matplotlib)</a></li>
+            <li><a href="#cdms">CDMs</a></li>
+            <li><a href="#atmosphere">Atmosphere</a></li>
+            <li><a href="#climate">Climate</a></li>
+            <li><a href="#statistics">Statistics</a></li>
+            <li><a href="#miscellaneous-other-tools">Miscellaneous Other Tools</a></li>
+            <li><a href="#fun">Fun</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="sea-py-python-tools-for-oceanographic-analysis">SEA-PY: Python Tools for Oceanographic Analysis<a class="headerlink" href="#sea-py-python-tools-for-oceanographic-analysis" title="Permanent link"></a></h1>
+<table summary="Title">
+    <tr>
+        <td><img src="img/map.png" alt="South Atlantic Bathymetry"/></td>
+        <td><h3>A collaborative effort to organize and distribute<br/>
+        Python tools for the Oceanographic Community</h3></td>
+        <td><img src="img/timeSeries.png" alt="time series plot"/></td>
+    </tr>
+</table>
+
+<p>A collaborative effort to organize Python tools for the Oceanographic Community</p>
+<h2 id="the-bare-minimum">The bare minimum<a class="headerlink" href="#the-bare-minimum" title="Permanent link"></a></h2>
+<ul>
+<li><a href="http://www.python.org/">Python</a>: Needs no introduction.</li>
+<li><a href="http://ipython.scipy.org/">IPython</a>: An enhanced interactive Python shell.</li>
+<li><a href="http://numpy.scipy.org">NumPy</a>: Support for large, multi-dimensional arrays and matrices, along with a large library of high-level mathematical functions to operate on these arrays.</li>
+<li><a href="http://www.scipy.org">SciPy</a>: Library of algorithms and mathematical tools for the Python programming language.</li>
+<li><a href="http://matplotlib.sourceforge.net">matplotlib</a>: 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments.</li>
+</ul>
+<h2 id="data-acquisition">Data Acquisition<a class="headerlink" href="#data-acquisition" title="Permanent link"></a></h2>
+<ul>
+<li><a href="https://github.com/nasa/podaacpy">Podaacpy</a>: A python utility library for interacting with NASA JPL&rsquo;s <a href="https://podaac.jpl.nasa.gov/">PO.DAAC</a> and NASA&rsquo;s <a href="https://oceancolor.gsfc.nasa.gov/">OceanColor Web</a></li>
+</ul>
+<h2 id="data-acquisition_1">Data Acquisition<a class="headerlink" href="#data-acquisition_1" title="Permanent link"></a></h2>
+<ul>
+<li><a href="https://github.com/nasa/podaacpy">Podaacpy</a>: A python utility library for interacting with NASA JPL&rsquo;s <a href="https://podaac.jpl.nasa.gov/">PO.DAAC</a> and NASA&rsquo;s <a href="https://oceancolor.gsfc.nasa.gov/">OceanColor Web</a></li>
+</ul>
+<h2 id="time-series-tools">Time Series Tools<a class="headerlink" href="#time-series-tools" title="Permanent link"></a></h2>
+<ul>
+<li><a href="https://github.com/wesleybowman/UTide">UTide</a>: UTide - A project (in its early development phase) to create a Python implementation of the Matlab-based UTide tidal analysis tools.</li>
+<li><a href="https://github.com/moflaher/ttide_py">ttide</a>: A direct conversion of T_Tide to Python.</li>
+<li><a href="https://github.com/sam-cox/pytides">pytides</a>: Pytides is small Python package for the analysis and prediction of tides.</li>
+<li><a href="http://sourceforge.net/apps/mediawiki/tappy/index.php">tappy</a>: Tidal analysis package.</li>
+<li><a href="http://labix.org/python-dateutil">dateutil</a>: Provides powerful extensions to the standard datetime module.</li>
+<li><a href="http://pypi.python.org/pypi/PyWavelets">PyWavelets</a>: Wavelet transform module.</li>
+<li><a href="http://pypi.python.org/pypi/wafo">wafo</a>: Routines for statistical analysis and simulation of random waves and random loads.</li>
+<li><a href="http://pypi.python.org/pypi/pandas">pandas</a>: Cross-section and time series data analysis toolkit</li>
+<li><a href="http://currents.soest.hawaii.edu">Currents</a>: CODAS, Lowered ADCP</li>
+</ul>
+<h2 id="numerical-modeling-tools">Numerical Modeling Tools<a class="headerlink" href="#numerical-modeling-tools" title="Permanent link"></a></h2>
+<ul>
+<li><a href="https://github.com/hetland/octant">octant</a>: Ocean C-grid model seTup and Analysis Toolkit. The toolkit contains general modeling tools for dealing with arrays, diagnosing standard properties, curvilinear grid generation, and interpolation. Specific tools are also included for ROMS and GETM.</li>
+<li><a href="https://github.com/kshedstrom/pyroms">pyroms</a>: Collection of tools to help with input and output files from the Regional Ocean Modeling System (ROMS).</li>
+<li><a href="https://github.com/GrumpyNounours/PySeidon">PySeidon</a>: Suite of tools for the tidal energy community and FVCOM users</li>
+<li><a href="https://github.com/pwcazenave/PyFVCOM">PyFVCOM</a>: PyFVCOM is a collection of various tools and utilities which can be used to extract, analyse and plot input and output files from FVCOM.</li>
+<li><a href="https://github.com/kthyng/Tracpy">TracPy</a>: Fortran core of Tracmass + Python wrapping around the outside.  TracPy is a toolbox for Lagrangian tracking on top of staggered C grid model output, and is currently set up to use directly with ROMS.</li>
+<li><a href="https://github.com/hetland/pygridgen">pygridgen</a>: A Python interface to Pavel Sakov&rsquo;s C-based Gridgen Orthogonal Grid Generation Package.</li>
+<li><a href="https://github.com/martalmeida/okean">okean</a>: Ocean modelling and analysis tools.</li>
+</ul>
+<h2 id="mapping-tools">Mapping Tools<a class="headerlink" href="#mapping-tools" title="Permanent link"></a></h2>
+<ul>
+<li><a href="http://matplotlib.org/basemap/">basemap</a>: Matplotlib Basemap Toolkit.</li>
+<li><a href="http://scitools.org.uk/cartopy/">cartopy</a>: A library providing cartographic tools for python.</li>
+<li><a href="http://folium.readthedocs.org/en/latest">folium</a>: Python Data. Leaflet.js Maps.</li>
+<li><a href="http://code.google.com/p/pysal">PySAL</a>: Python Spatial Analysis Library.</li>
+<li><a href="https://github.com/sci-wms/sci-wms">sci-wms</a>: A Python WMS service for geospatial gridded data.</li>
+</ul>
+<h2 id="hydrographic-tools">Hydrographic Tools<a class="headerlink" href="#hydrographic-tools" title="Permanent link"></a></h2>
+<ul>
+<li><a href="https://pypi.python.org/pypi/ctd">python-ctd</a>: Tools to load hydrographic data as pandas DataFrame with some handy methods for data pre-processing and analysis.</li>
+<li><a href="https://pypi.python.org/pypi/seawater">python-seawater</a>:  Python version of the CSIRO seawater toolbox (SEAWATER-3.3).</li>
+<li><a href="https://pypi.python.org/pypi/gsw">python-gsw</a>: A oceanographic toolbox of the International Thermodynamic Equation Of Seawater - 2010, (TEOS-10).</li>
+<li><a href="https://pypi.python.org/pypi/pygsw">pygsw</a>: C-wrapped alternative to python-gsw.</li>
+<li><a href="https://pypi.org/project/cbsyst">cbsyst</a>: Python module for calculating carbon and boron solution chem.</li>
+<li><a href="http://ironicmtn.com/narwhal.html">narwhal</a>: Experimental tools to organize, analyze, and plot CTD data, including GSW wrappers.</li>
+</ul>
+<h2 id="data-interface-tools">Data Interface Tools<a class="headerlink" href="#data-interface-tools" title="Permanent link"></a></h2>
+<ul>
+<li><a href="http://code.google.com/p/netcdf4-python">netcdf4-python</a>: Python/numpy interface to netCDF</li>
+<li><a href="https://github.com/FrancescAlted/python-blosc">python-blosc</a>: Wrapper for the Blosc compressor.</li>
+<li><a href="http://www.pytables.org/moin">PyTables</a>: Package for managing hierarchical datasets and designed to efficiently and easily cope with extremely large amounts of data.</li>
+<li><a href="http://code.google.com/p/h5py">h5py</a>: Interface to the HDF5 library.</li>
+<li><a href="https://pypi.python.org/pypi/python-hdf4">python-hdf4</a>: Python-HDF4: Python interface to the NCSA HDF4 library.</li>
+<li><a href="http://www.pyngl.ucar.edu">PyNIO/PyNGL</a>: File input/output</li>
+<li><a href="http://pydap.org">Pydap</a>: Library implementing the Data Access Protocol.</li>
+<li><a href="https://pypi.python.org/pypi/pygrib">pygrib</a>: python GRIB (editions 1 and 2) reader.</li>
+</ul>
+<h2 id="plotting-beyond-matplotlib">Plotting (beyond matplotlib)<a class="headerlink" href="#plotting-beyond-matplotlib" title="Permanent link"></a></h2>
+<ul>
+<li><a href="http://code.enthought.com/projects/mayavi">mayavi</a>: Scripting for 3D plotting.</li>
+<li><a href="http://gnuplot-py.sourceforge.net">gnuplot-py</a>: Package that interfaces to gnuplot, the popular open-source plotting program.</li>
+<li><a href="http://www.pyngl.ucar.edu">PyNGL</a>: Scientific visualization.</li>
+<li><a href="http://ggplot.yhathq.com">ggplot</a>: ggplot is a plotting system for Python based on R&rsquo;s ggplot2 and the Grammar of Graphics. It is built for making professional looking, plots quickly with minimal code.</li>
+<li><a href="http://bokeh.pydata.org/en/latest">bokeh</a>: Bokeh is a Python interactive visualization library that targets modern web browsers for presentation.</li>
+<li><a href="http://mpld3.github.io">mpld3</a>: The mpld3 project brings together Matplotlib, the popular Python-based graphing library, and D3js, the popular Javascript library for creating interactive data visualizations for the web.</li>
+</ul>
+<h2 id="cdms">CDMs<a class="headerlink" href="#cdms" title="Permanent link"></a></h2>
+<ul>
+<li><a href="https://pypi.python.org/pypi/paegan">paegan</a>: Processing and Analysis for Numerical Data.</li>
+<li><a href="http://scitools.org.uk/iris">Iris</a>: A Python library for Meteorology and Climatology</li>
+</ul>
+<h2 id="atmosphere">Atmosphere<a class="headerlink" href="#atmosphere" title="Permanent link"></a></h2>
+<ul>
+<li><a href="http://www.johnny-lin.com/py_pkgs/atmqty/doc">atmqty</a>: Methods to calculate atmospheric quantities (on the Earth) that are directly derivative (i.e. not requiring time integration or modeling) from standard state variables.</li>
+<li><a href="https://github.com/ocefpaf/python-airsea">airsea</a>: Translation of the original AIR_SEA toolbox for Matlab.</li>
+</ul>
+<h2 id="climate">Climate<a class="headerlink" href="#climate" title="Permanent link"></a></h2>
+<ul>
+<li><a href="http://fisica.ehu.es/pyclimate/PyClimate">PyClimate</a>: Designed to accomplish some usual tasks needed during the analysis of climate variability. It provides functions to handle simple I/O operations, handling of COARDS-compliante netCDF files, EOF analysis, SVD and CCA analysis of coupled data sets, some linear digital filters, kernel based probability density function estimation and access to DCDFLIB.C library</li>
+<li><a href="https://code.launchpad.net/~pierregm/scipy/climpy">climpy</a>: climpy module.</li>
+<li><a href="http://www2-pcmdi.llnl.gov/cdat">CDAT</a>: Climate Data Analysis Tools.</li>
+<li><a href="https://github.com/ClimateCodeFoundation/ccc-gistemp">ccc-gistemp</a>: Reimplementation of GISTEMP in Python for clarity.</li>
+</ul>
+<h2 id="statistics">Statistics<a class="headerlink" href="#statistics" title="Permanent link"></a></h2>
+<ul>
+<li><a href="https://pypi.python.org/pypi/statsmodels">statsmodels</a>: Statistical computations and models for use with SciPy.</li>
+<li><a href="http://scikit-learn.sourceforge.net/stable">scikit.learn</a>: Module integrating classic machine learning algorithms in the tightly-knit world of scientific Python packages.</li>
+<li><a href="https://pypi.python.org/pypi/rpy2">RPy</a>: Interface to the R Programming Language.</li>
+<li><a href="http://pymc-devs.github.io/pymc">pymc</a>: Markov chain Monte Carlo for Python</li>
+</ul>
+<h2 id="miscellaneous-other-tools">Miscellaneous Other Tools<a class="headerlink" href="#miscellaneous-other-tools" title="Permanent link"></a></h2>
+<ul>
+<li><a href="https://pypi.python.org/pypi/oceans">oceans</a>: Misc functions for oceanographic data analysis.</li>
+<li><a href="http://geopython.github.io/OWSLib">OWSLib</a>: OWSLib is a Python package for client programming with Open Geospatial Consortium (OGC) web service (hence OWS) interface standards, and their related content models.</li>
+<li><a href="https://pypi.python.org/pypi/pyoos">pyoos</a>: A Python library for collecting Met/Ocean observations.</li>
+<li><a href="http://code.google.com/p/scitools">scitools</a>: Contains many useful tools for scientific computing in Python. The package is built on top of other widely used packages such as NumPy, SciPy, ScientificPython, Matplotlib, Gnuplot, etc.</li>
+<li><a href="http://pypi.python.org/pypi/uncertainties">uncertainties</a>: Transparent calculations with uncertainties on the quantities involved (aka &ldquo;error propagation&rdquo;) ; fast calculation of derivatives.</li>
+<li><a href="https://github.com/pydata/numexpr/wiki/Numexpr-Users-Guide">numexpr</a>: Fast numerical array expression evaluator for Python and NumPy.</li>
+<li><a href="http://pypi.python.org/pypi/Bottleneck">Bottleneck</a>: Fast NumPy array functions written in Cython.</li>
+<li><a href="http://code.google.com/p/spyderlib">spyderlib</a>: Spyder is the Scientific PYthon Development EnviRonment.</li>
+<li><a href="http://scikits.appspot.com/scikits">SciPy scikits</a>: Scipy Toolkits are independent and separately installable projects hosted under a common namespace. Packages that are distributed in this way are here (instead of in monolithic scipy) for at least one of three general reasons. Each of these reasons use the same high-level namespace (scikits).</li>
+<li><a href="http://sourceforge.net/projects/fwrap/files">fwrap</a>: Wraps FORTRAN code.</li>
+<li><a href="http://code.google.com/p/gmpy">gmpy</a>: A C-coded Python extension module that wraps the GMP library to provide to Python code fast multiprecision arithmetic (integer, rational, and float), random number generation, advanced number-theoretical functions, and more.</li>
+<li><a href="http://sympy.org">SymPy</a>: Library for symbolic mathematics.</li>
+<li><a href="http://rhodesmill.org/pyephem">PyEphem</a>: Scientific-grade astronomical computations.</li>
+<li><a href="http://packages.python.org/Astropysics">Astropysics</a>: Astrophysics utilities.</li>
+<li><a href="http://biopython.org/wiki/Main_Page">biopython</a>: Tools for biological computation written in Python.</li>
+<li><a href="http://www.pytroll.org/">pytroll</a>: Python modules for the reading, interpretation, and writing of weather satellite data.</li>
+<li><a href="http://www.scipy.org/Topical_Software">Topical Software</a>: SciPy Topical Software.</li>
+<li><a href="http://ferret.pmel.noaa.gov/Ferret/downloads/pyferret/">pyferret</a>: Ferret is an interactive computer visualization and analysis environment designed to meet the needs of oceanographers and meteorologists.</li>
+<li><a href="http://www.openptv.net">openptv</a>: OpenPTV is an open source particle tracking velocimetry consortium providing software and assistance with the 3D-PTV experiments, including the field deployments for oceanographers, limnologists and meteorologits.</li>
+</ul>
+<h2 id="fun">Fun<a class="headerlink" href="#fun" title="Permanent link"></a></h2>
+<ul>
+<li><a href="https://github.com/akleeman/slocum">slocum</a>: A tool for ocean passage planning.</li>
+<li><a href="https://github.com/DataSounds/OceanSound">OceanSound</a>: Get the music from oceancolor images, through MODIS satellite.</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /> <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type"> "sea-py"</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://pyoceans.github.io/" property="cc:attributionName" rel="cc:attributionURL">Filipe Fernandes</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"> Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br /></p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" defer></script>
+        <script src="js/mathjaxhelper.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2019-08-08 19:42:26
+-->
