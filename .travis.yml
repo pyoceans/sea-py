@@ -4,7 +4,7 @@ sudo: false
 
 env:
   global:
-    - secure: "GBUWN7mc4pdUrR15grztD6NchiYhFT70ap6hKWIf0d3XwfWSQo0I85qnIqSWrzuThMp7qjJMCvemrPpXBZngUL3LvYi1t9LoF5shokO5tD3qLnaT0mFtW5r2JuOFR+7dMmbTklVqmB3zX+/JPn+L3qeyDn7mwbW++lcoe2jA6qY="
+    - secure: "VM3yP30pNEnax9xiOG4oT54/o0e/p3OwqUwSMDFDpHrHd0NkeNdbLcG9gMiyb1Vd23T6GElWIlWTllW7jVPFPyS72UnMQHX4KM69TjaabfOr+hsf2yZ5i7CyIAKOXOKeKAY278f5JShO96lUAQCw/7UTI4K6o/scOJlIq/gc3SQ="
 
 before_install:
   # Install miniconda and create TEST env.
@@ -23,8 +23,7 @@ install:
     source activate SEAPY
     conda info --all
 
-
 script:
   - set -e
   - mkdocs build --clean --verbose
-  - doctr deploy --built-docs=_site .
+  - doctr deploy --built-docs _site .
