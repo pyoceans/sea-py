@@ -7,14 +7,22 @@ env:
     - secure: "GBUWN7mc4pdUrR15grztD6NchiYhFT70ap6hKWIf0d3XwfWSQo0I85qnIqSWrzuThMp7qjJMCvemrPpXBZngUL3LvYi1t9LoF5shokO5tD3qLnaT0mFtW5r2JuOFR+7dMmbTklVqmB3zX+/JPn+L3qeyDn7mwbW++lcoe2jA6qY="
 
 before_install:
-  - wget http://bit.ly/miniconda -O miniconda.sh
-  - bash miniconda.sh -b -p $HOME/miniconda
-  - export PATH="$HOME/miniconda/bin:$PATH"
-  - conda update conda --yes
+  # Install miniconda and create TEST env.
+  - |
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+    bash miniconda.sh -b -p $HOME/miniconda
+    export PATH="$HOME/miniconda/bin:$PATH"
+    conda config --set always_yes yes --set changeps1 no --set show_channel_urls true
+    conda update --quiet conda
+    conda config --add channels conda-forge --force
+    conda config --set channel_priority strict
 
 install:
-  - conda env create -f environment.yml
-  - source activate TEST
+  - |
+    conda env create --name SEAPY --file environment.yml
+    source activate SEAPY
+    conda info --all
+
 
 script:
   - set -e
