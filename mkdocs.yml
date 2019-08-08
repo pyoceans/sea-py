@@ -19,7 +19,7 @@ markdown_extensions:
       permalink: ""
   - extra
   - smarty
-  - math
+  - pymdownx.arithmatex
   - markdown_checklist.extension
 extra_javascript: ['https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML','js/mathjaxhelper.js']
 google_analytics: ['UA-9133259-16', 'pyoceans.github.io']
