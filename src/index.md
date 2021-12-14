@@ -66,6 +66,7 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 - [pygsw](https://pypi.python.org/pypi/pygsw): C-wrapped alternative to python-gsw.
 - [cbsyst](https://pypi.org/project/cbsyst): Python module for calculating carbon and boron solution chem.
 - [narwhal](http://ironicmtn.com/narwhal.html): Experimental tools to organize, analyze, and plot CTD data, including GSW wrappers.
+- [PyCO2SYS](https://pyco2sys.readthedocs.io/en/latest/): Marine carbonate system calculations (translated and expanded from CO2SYS for MATLAB/Excel).
 
 
 ## Data Interface Tools
