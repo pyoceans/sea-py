@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>https://pyoceans.github.io/sea-py/</loc>
-     <lastmod>2019-08-08</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>https://pyoceans.github.io/sea-py/</loc>
+         <lastmod>2022-01-18</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://pyoceans.github.io/sea-py/webresources/</loc>
-     <lastmod>2019-08-08</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>https://pyoceans.github.io/sea-py/about/</loc>
+         <lastmod>2022-01-18</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://pyoceans.github.io/sea-py/about/</loc>
-     <lastmod>2019-08-08</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>https://pyoceans.github.io/sea-py/webresources/</loc>
+         <lastmod>2022-01-18</lastmod>
+         <changefreq>daily</changefreq>
     </url>
 </urlset>
