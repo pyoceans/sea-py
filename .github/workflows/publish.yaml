@@ -1,0 +1,38 @@
+name: Build page
+
+on: ["push", "pull_request"]
+
+jobs:
+  build:
+    name: Build documentation page
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Conda
+        uses: s-weigand/setup-conda@v1
+        with:
+          activate-conda: false
+          update-conda: true
+          conda-channels: conda-forge
+
+      - name: Install conda environment
+        shell: bash -l {0}
+        run: |
+          conda env create --file environment.yml --name SEAPY
+
+      - name: Build page
+        shell: bash
+        run: |
+          source activate SEAPY
+          set -e
+          mkdocs build --clean --verbose
+
+      - name: Publish HTML
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _site/
+          keep_files: false
