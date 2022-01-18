@@ -60,13 +60,14 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 
 ## Hydrographic Tools
 
-- [python-ctd](https://pypi.python.org/pypi/ctd): Tools to load hydrographic data as pandas DataFrame with some handy methods for data pre-processing and analysis.
-- [python-seawater](https://pypi.python.org/pypi/seawater):  Python version of the CSIRO seawater toolbox (SEAWATER-3.3).
-- [python-gsw](https://pypi.python.org/pypi/gsw): A oceanographic toolbox of the International Thermodynamic Equation Of Seawater - 2010, (TEOS-10).
-- [pygsw](https://pypi.python.org/pypi/pygsw): C-wrapped alternative to python-gsw.
+- [argopy](https://github.com/euroargodev/argopy): Argo data access, manipulation and visualisation for standard users as well as Argo experts
 - [cbsyst](https://pypi.org/project/cbsyst): Python module for calculating carbon and boron solution chem.
 - [narwhal](http://ironicmtn.com/narwhal.html): Experimental tools to organize, analyze, and plot CTD data, including GSW wrappers.
 - [PyCO2SYS](https://pyco2sys.readthedocs.io/en/latest/): Marine carbonate system calculations (translated and expanded from CO2SYS for MATLAB/Excel).
+- [pygsw](https://pypi.python.org/pypi/pygsw): C-wrapped alternative to python-gsw.
+- [python-ctd](https://pypi.python.org/pypi/ctd): Tools to load hydrographic data as pandas DataFrame with some handy methods for data pre-processing and analysis.
+- [python-gsw](https://pypi.python.org/pypi/gsw): A oceanographic toolbox of the International Thermodynamic Equation Of Seawater - 2010, (TEOS-10).
+- [python-seawater](https://pypi.python.org/pypi/seawater):  Python version of the CSIRO seawater toolbox (SEAWATER-3.3).
 
 
 ## Data Interface Tools
