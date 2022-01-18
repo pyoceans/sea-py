@@ -18,3 +18,4 @@
 - [NumPy for Matlab Users](http://wiki.scipy.org/NumPy_for_Matlab_Users)
 - [matplotlib gallery](http://matplotlib.org/gallery.html)
 - [Software Carpentry](http://software-carpentry.org/blog/index.html)
+- [Argo online (python) school](https://euroargodev.github.io/argoonlineschool/intro.html)
