@@ -1,25 +1,26 @@
 site_name: SEA-PY
-pages:
+nav:
   - Home: index.md
   - Web resources: webresources.md
   - About: about.md
 
-theme_dir: mkdocs
+theme:
+  name: mkdocs
+  analytics:
+    gtag: G-QLVTTY1HG1
 
 site_description: A collaborative effort to organize and distribute Python tools for the Oceanographic Community
-site_url: https://pyoceans.github.io/sea-py
+site_url: https://pyoceans.github.io/sea-py/
 repo_url: https://github.com/pyoceans/sea-py
 site_author: Filipe Fernandes
-site_favicon: favicon.png
 docs_dir: src
 site_dir: _site
 copyright: <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /> <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type"> "sea-py"</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://pyoceans.github.io/" property="cc:attributionName" rel="cc:attributionURL">Filipe Fernandes</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"> Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br />
 markdown_extensions:
   - toc:
-      permalink: ""
+      permalink: true
   - extra
   - smarty
   - pymdownx.arithmatex
   - markdown_checklist.extension
 extra_javascript: ['https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML','js/mathjaxhelper.js']
-google_analytics: ['UA-9133259-16', 'pyoceans.github.io']
