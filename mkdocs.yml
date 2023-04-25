@@ -7,11 +7,11 @@ nav:
 theme:
   name: mkdocs
   analytics:
-    gtag: G-YGBWSR5Q6Q
+    gtag: G-QLVTTY1HG1
 
 site_description: A collaborative effort to organize and distribute Python tools for the Oceanographic Community
-site_url: https://andrew-s28.github.io/sea-py
-repo_url: https://github.com/andrew-s28/sea-py
+site_url: https://pyoceans.github.io/sea-py/
+repo_url: https://github.com/pyoceans/sea-py
 site_author: Filipe Fernandes
 docs_dir: src
 site_dir: _site
