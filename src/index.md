@@ -73,6 +73,7 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 
 - [argopy](https://github.com/euroargodev/argopy): Argo data access, manipulation and visualisation for standard users as well as Argo experts
 - [cbsyst](https://pypi.org/project/cbsyst): Python module for calculating carbon and boron solution chem.
+- [mixsea](https://mixsea.readthedocs.io/en/v0.1.1/): Ocean mixing parameterizations in python.
 - [narwhal](http://ironicmtn.com/narwhal.html): Experimental tools to organize, analyze, and plot CTD data, including GSW wrappers.
 - [PyCO2SYS](https://pyco2sys.readthedocs.io/en/latest/): Marine carbonate system calculations (translated and expanded from CO2SYS for MATLAB/Excel).
 - [pygsw](https://pypi.python.org/pypi/pygsw): C-wrapped alternative to python-gsw.
