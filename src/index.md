@@ -51,10 +51,9 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 
 ## Numerical Modeling Tools
 
-- [octant](https://github.com/hetland/octant): Ocean C-grid model seTup and Analysis Toolkit. The toolkit contains general modeling tools for dealing with arrays, diagnosing standard properties, curvilinear grid generation, and interpolation. Specific tools are also included for ROMS and GETM.
 - [okean](https://github.com/martalmeida/okean): Ocean modelling and analysis tools.
-- [PyFVCOM](https://github.com/pwcazenave/PyFVCOM): PyFVCOM is a collection of various tools and utilities which can be used to extract, analyse and plot input and output files from FVCOM.
-- [pygridgen](https://github.com/hetland/pygridgen): A Python interface to Pavel Sakov's C-based Gridgen Orthogonal Grid Generation Package.
+- [PyFVCOM](https://github.com/pmlmodelling/pyfvcom): PyFVCOM is a collection of various tools and utilities which can be used to extract, analyse and plot input and output files from FVCOM.
+- [pygridgen](https://github.com/pygridgen/pygridgen): A Python interface to Pavel Sakov's C-based Gridgen Orthogonal Grid Generation Package.
 - [pyroms](https://github.com/kshedstrom/pyroms): Collection of tools to help with input and output files from the Regional Ocean Modeling System (ROMS).
 - [PySeidon](https://github.com/GrumpyNounours/PySeidon): Suite of tools for the tidal energy community and FVCOM users
 - [TracPy](https://github.com/kthyng/Tracpy): Fortran core of Tracmass + Python wrapping around the outside.  TracPy is a toolbox for Lagrangian tracking on top of staggered C grid model output, and is currently set up to use directly with ROMS.
@@ -64,8 +63,8 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 
 - [basemap](http://matplotlib.org/basemap/): Matplotlib Basemap Toolkit. Warning: this package is being deprecated in favor of the Cartopy project. 
 - [cartopy](https://scitools.org.uk/cartopy/docs/latest/): A library providing cartographic tools for python.
-- [folium](http://folium.readthedocs.org/en/latest): Python Data. Leaflet.js Maps.
-- [PySAL](http://code.google.com/p/pysal): Python Spatial Analysis Library.
+- [folium](hhttps://pypi.org/project/folium/): Python Data. Leaflet.js Maps.
+- [PySAL](https://github.com/pysal/pysal): Python Spatial Analysis Library.
 - [sci-wms](https://github.com/sci-wms/sci-wms): A Python WMS service for geospatial gridded data.
 
 
@@ -74,7 +73,7 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 - [argopy](https://github.com/euroargodev/argopy): Argo data access, manipulation and visualisation for standard users as well as Argo experts
 - [cbsyst](https://pypi.org/project/cbsyst): Python module for calculating carbon and boron solution chem.
 - [mixsea](https://mixsea.readthedocs.io/en/v0.1.1/): Ocean mixing parameterizations in python.
-- [narwhal](http://ironicmtn.com/narwhal.html): Experimental tools to organize, analyze, and plot CTD data, including GSW wrappers.
+- [narwhal](https://github.com/njwilson23/narwhal): Experimental tools to organize, analyze, and plot CTD data, including GSW wrappers.
 - [PyCO2SYS](https://pyco2sys.readthedocs.io/en/latest/): Marine carbonate system calculations (translated and expanded from CO2SYS for MATLAB/Excel).
 - [pygsw](https://pypi.python.org/pypi/pygsw): C-wrapped alternative to python-gsw.
 - [python-ctd](https://pypi.python.org/pypi/ctd): Tools to load hydrographic data as pandas DataFrame with some handy methods for data pre-processing and analysis.
@@ -89,7 +88,7 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 - [Pydap](https://www.pydap.org/en/latest/): Library implementing the Data Access Protocol.
 - [pygrib](https://pypi.python.org/pypi/pygrib): python GRIB (editions 1 and 2) reader.
 - [PyNIO/PyNGL](http://www.pyngl.ucar.edu): File input/output
-- [PyTables](http://www.pytables.org/moin): Package for managing hierarchical datasets and designed to efficiently and easily cope with extremely large amounts of data.
+- [PyTables](https://www.pytables.org/): Package for managing hierarchical datasets and designed to efficiently and easily cope with extremely large amounts of data.
 - [python-blosc](https://www.blosc.org/python-blosc2/python-blosc2.html): Wrapper for the Blosc compressor.
 - [python-hdf4](https://pypi.python.org/pypi/python-hdf4): Python-HDF4: Python interface to the NCSA HDF4 library.
 
@@ -100,7 +99,7 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 - [cmocean](https://matplotlib.org/cmocean/): Beautiful colormaps for oceanography.
 - [mayavi](http://code.enthought.com/projects/mayavi): Scripting for 3D plotting.
 - [mpld3](http://mpld3.github.io): The mpld3 project brings together Matplotlib, the popular Python-based graphing library, and D3js, the popular Javascript library for creating interactive data visualizations for the web.
-- [ggplot](http://ggplot.yhathq.com): ggplot is a plotting system for Python based on R's ggplot2 and the Grammar of Graphics. It is built for making professional looking, plots quickly with minimal code.
+- [ggplot](https://yhat.github.io/ggpy/): ggplot is a plotting system for Python based on R's ggplot2 and the Grammar of Graphics. It is built for making professional looking, plots quickly with minimal code.
 - [gnuplot-py](http://gnuplot-py.sourceforge.net): Package that interfaces to gnuplot, the popular open-source plotting program.
 - [PyNGL](http://www.pyngl.ucar.edu): Scientific visualization.
 - [scienceplots](https://github.com/garrettj403/SciencePlots): Pre-made matplotlib styles for formatting figures for publication.
@@ -129,10 +128,10 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 
 ## Statistics
 
-- [pymc](http://pymc-devs.github.io/pymc): Markov chain Monte Carlo for Python
+- [pymc](https://www.pymc.io/welcome.html): Markov chain Monte Carlo for Python
 - [RPy](https://pypi.python.org/pypi/rpy2): Interface to the R Programming Language.
 - [statsmodels](https://pypi.python.org/pypi/statsmodels): Statistical computations and models for use with SciPy.
-- [scikit.learn](http://scikit-learn.sourceforge.net/stable): Module integrating classic machine learning algorithms in the tightly-knit world of scientific Python packages.
+- [scikit.learn](https://scikit-learn.org/stable/): Module integrating classic machine learning algorithms in the tightly-knit world of scientific Python packages.
 
 
 ## Miscellaneous Other Tools
@@ -141,19 +140,19 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 - [biopython](http://biopython.org/wiki/Main_Page): Tools for biological computation written in Python.
 - [Bottleneck](https://pypi.org/project/Bottleneck/): Fast NumPy array functions written in Cython.
 - [fwrap](http://sourceforge.net/projects/fwrap/files): Wraps FORTRAN code.
-- [gmpy](http://code.google.com/p/gmpy): A C-coded Python extension module that wraps the GMP library to provide to Python code fast multiprecision arithmetic (integer, rational, and float), random number generation, advanced number-theoretical functions, and more.
+- [gmpy](https://github.com/aleaxit/gmpy): A C-coded Python extension module that wraps the GMP library to provide to Python code fast multiprecision arithmetic (integer, rational, and float), random number generation, advanced number-theoretical functions, and more.
 - [numexpr](https://numexpr.readthedocs.io/en/latest/user_guide.html): Fast numerical array expression evaluator for Python and NumPy.
 - [oceans](https://pypi.python.org/pypi/oceans): Misc functions for oceanographic data analysis.
 - [openptv](http://www.openptv.net): OpenPTV is an open source particle tracking velocimetry consortium providing software and assistance with the 3D-PTV experiments, including the field deployments for oceanographers, limnologists and meteorologits.
-- [OWSLib](http://geopython.github.io/OWSLib): OWSLib is a Python package for client programming with Open Geospatial Consortium (OGC) web service (hence OWS) interface standards, and their related content models.
+- [OWSLib](https://owslib.readthedocs.io/en/latest/): OWSLib is a Python package for client programming with Open Geospatial Consortium (OGC) web service (hence OWS) interface standards, and their related content models.
 - [PyEphem](http://rhodesmill.org/pyephem): Scientific-grade astronomical computations.
 - [pyferret](http://ferret.pmel.noaa.gov/Ferret/downloads/pyferret/): Ferret is an interactive computer visualization and analysis environment designed to meet the needs of oceanographers and meteorologists.
 - [pyoos](https://pypi.python.org/pypi/pyoos): A Python library for collecting Met/Ocean observations.
 - [pytroll](http://www.pytroll.org/): Python modules for the reading, interpretation, and writing of weather satellite data.
-- [SciPy scikits](http://scikits.appspot.com/scikits): Scipy Toolkits are independent and separately installable projects hosted under a common namespace. Packages that are distributed in this way are here (instead of in monolithic scipy) for at least one of three general reasons. Each of these reasons use the same high-level namespace (scikits).
-- [scitools](http://code.google.com/p/scitools): Contains many useful tools for scientific computing in Python. The package is built on top of other widely used packages such as NumPy, SciPy, ScientificPython, Matplotlib, Gnuplot, etc.
+- [SciPy scikits](https://svn.scipy.org/scikits.html): Scipy Toolkits are independent and separately installable projects hosted under a common namespace. Packages that are distributed in this way are here (instead of in monolithic scipy) for at least one of three general reasons. Each of these reasons use the same high-level namespace (scikits).
+- [scitools](https://scitools.org.uk/): Contains many useful tools for scientific computing in Python. The package is built on top of other widely used packages such as NumPy, SciPy, ScientificPython, Matplotlib, Gnuplot, etc.
 - [SymPy](http://sympy.org): Library for symbolic mathematics.
-- [Topical Software](http://www.scipy.org/Topical_Software): SciPy Topical Software.
+- [Topical Software](https://svn.scipy.org/topical-software.html): SciPy Topical Software.
 - [uncertainties](http://pypi.python.org/pypi/uncertainties): Transparent calculations with uncertainties on the quantities involved (aka "error propagation") ; fast calculation of derivatives.
 
 
