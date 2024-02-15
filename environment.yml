@@ -4,5 +4,7 @@ channels:
 dependencies:
   - python=3
   - mkdocs
-  - markdown-checklist
   - pymdown-extensions
+  - pip
+  - pip:
+    - markdown-checklist
