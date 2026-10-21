@@ -64,6 +64,7 @@ A collaborative effort to organize Python tools for the Oceanographic Community
 - [basemap](http://matplotlib.org/basemap/): Matplotlib Basemap Toolkit. Warning: this package is being deprecated in favor of the Cartopy project. 
 - [cartopy](https://scitools.org.uk/cartopy/docs/latest/): A library providing cartographic tools for python.
 - [folium](hhttps://pypi.org/project/folium/): Python Data. Leaflet.js Maps.
+- [ocean-plot](https://github.com/1460197441-web/ocean-plot): Command-line SST maps, wind vectors, and point time series from rectilinear ocean NetCDF files, using xarray, Matplotlib, and optional Cartopy.
 - [PySAL](https://github.com/pysal/pysal): Python Spatial Analysis Library.
 - [sci-wms](https://github.com/sci-wms/sci-wms): A Python WMS service for geospatial gridded data.
 
